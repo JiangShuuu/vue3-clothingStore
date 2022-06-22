@@ -4,6 +4,9 @@ module.exports = {
     './src/**/*.{vue,js,ts,jsx,tsx}'
   ],
   theme: {
+    fontFamily: {
+      sans: ['Arial', 'Microsoft JhengHei', 'sans-serif'],
+    },
     extend: {}
   },
   plugins: []
