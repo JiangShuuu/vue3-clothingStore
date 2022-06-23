@@ -1,10 +1,10 @@
 <template>
-  <div class="fixed z-10 w-full bg-white">
+  <div class="fixed z-10 w-full bg-white shadow-md">
     <div class="relative flex-col flex-center">
       <div class="w-[200px]">
         <img class="w-[200px]" src="./../assets/Icon/LogoBA.png" alt="" />
       </div>
-      <div class="">
+      <div class="main">
         <div class="w-full md:hidden">
           <label for="navbar-toggle" class="nav_taggle-label">
             <span class="hamburger"></span>
@@ -21,51 +21,28 @@
             </ul>
           </div>
         </div>
-        <div class="main_content_web">
-          <div class="content_list">
-            <ul class="content_list_items">
-              <li class="content_list_item">首頁</li>
-              <li class="content_list_item">所有商品</li>
-              <li class="content_list_item">關於我們</li>
-              <li class="content_list_item">聯絡我們</li>
-              <li class="content_list_item">Facebook專頁</li>
-            </ul>
-          </div>
+        <div class="hidden w-full md:block">
+          <ul class="mb-2 flex-center">
+            <li class="item">首頁</li>
+            <li class="mx-2 item">所有商品</li>
+            <li class="item">關於我們</li>
+            <li class="mx-2 item">聯絡我們</li>
+            <li class="item">Facebook專頁</li>
+          </ul>
         </div>
       </div>
-      <!-- <div class="main_icon">
-        <ul class="icon_btns">
-          <router-link to="/signIn" class="icon_btns_btn icon active">
-            <i class="far fa-user-circle"></i>
+      <div class="absolute right-4 top-3.5">
+        <ul class="flex-center">
+          <router-link to="/signIn" class="">
+            <i class="text-gray-400 w-7 h-7 active:text-primary far fa-user-circle"></i>
           </router-link>
-          <li class="icon_btns_btn icon">
-            <i class="fas fa-shopping-bag"></i>
+          <li class="hidden mx-2 md:block">
+            <i class="text-gray-400 w-7 h-7 active:text-primary fas fa-shopping-bag"></i>
           </li>
-          <li class="icon_btns_btn icon"><i class="far fa-heart"></i></li>
-          <li class="icon_btns_btn icon"><i class="fas fa-search"></i></li>
+          <li class="hidden mr-2 md:block"><i class="text-gray-400 w-7 h-7 active:text-primary far fa-heart"></i></li>
+          <li class="hidden md:block"><i class="text-gray-400 w-7 h-7 active:text-primary fas fa-search"></i></li>
         </ul>
       </div>
-    </div>
-    <div class="nav_bottom">
-      <ul class="icon_btns">
-        <router-link to="/" :class="['icon_btns_btn', { active: this.router === '/' }]">
-          <i class="fas fa-home icon"></i>
-          <span>首頁</span>
-        </router-link>
-        <router-link to="/search" :class="['icon_btns_btn', { active: this.router === '/search' }]">
-          <i class="fas fa-search icon"></i>
-          <span>搜尋商品</span>
-        </router-link>
-        <router-link to="/favorite" :class="['icon_btns_btn', { active: this.router === '/favorite' }]">
-          <i class="far fa-heart icon"></i>
-          <span>我的收藏</span>
-        </router-link>
-        <router-link to="/shoppingCar" :class="['icon_btns_btn', { active: this.router === '/shoppingCar' }]">
-          <i class="fas fa-shopping-bag icon"></i>
-          <span>購物車</span>
-        </router-link>
-      </ul>
-    </div> -->
     </div>
   </div>
 </template>
@@ -83,11 +60,9 @@ function checkClose() {
 <style lang="postcss" scoped>
 
 
-
-
-
-
-
+.item:hover {
+  @apply underline underline-offset-8 decoration-2 decoration-primary cursor-pointer
+}
 .content_list {
   position: absolute;
   top: 0;
@@ -123,7 +98,7 @@ function checkClose() {
   transition: transform 0.2s ease-out;
 }
 .content_list_item:hover {
-  @apply underline underline-offset-8 decoration-2 decoration-primary -translate-x-0.5 -translate-y-0.5;
+  @apply underline underline-offset-8 decoration-2 decoration-primary -translate-x-0.5 -translate-y-0.5 cursor-pointer;
 }
 .nav_taggle-label {
   position: absolute;
@@ -173,125 +148,4 @@ function checkClose() {
   transition: opacity 0.3s ease-out 0.15s;
   opacity: 1;
 }
-/* .main_content_web {
-
-}
-      &_web {
-        @include mobile {
-          display: none;
-        }
-        .content_list {
-          &_items {
-            display: flex;
-          }
-          &_item {
-            margin: 0 1rem 0.75rem 1rem;
-            cursor: pointer;
-            &:hover {
-              color: $main-blue;
-              text-decoration: underline 1px solid $main-blue;
-              text-underline-offset: 3px;
-              text-decoration-thickness: 3px;
-              transform: 0.5s;
-              border-width: 2px;
-            }
-          }
-        }
-      }
-    }
-    &_icon {
-      position: absolute;
-      top: 18px;
-      right: 15px;
-      .icon_btns {
-        display: flex;
-        &_btn {
-          cursor: pointer;
-        }
-        .fa-user-circle {
-          width: 25px;
-          height: 25px;
-        }
-        .fa-shopping-bag {
-          display: none;
-        }
-        .fa-heart {
-          display: none;
-        }
-        .fa-search {
-          display: none;
-        }
-        .icon {
-          color: $mid-gray;
-          &:hover {
-            color: $main-blue;
-          }
-        }
-        .active {
-          color: $main-blue;
-        }
-
-        @include pad {
-          .fa-user-circle {
-            width: 20px;
-            height: 20px;
-          }
-          .fa-shopping-bag {
-            display: block;
-            margin: 0 0.75rem;
-            width: 20px;
-            height: 20px;
-          }
-          .fa-heart {
-            display: block;
-            margin: 0 0.75rem 0 0;
-            width: 20px;
-            height: 20px;
-          }
-          .fa-search {
-            display: block;
-            width: 20px;
-            height: 20px;
-          }
-        }
-      }
-    }
-  }
-  .nav_bottom {
-    @include pad {
-      display: none;
-    }
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    background: white;
-    z-index: 2;
-    .icon_btns {
-      // box-shadow: 0px 0px 1px 1px $mid-gray;
-      @include flexCenter;
-      justify-content: space-around;
-      &_btn {
-        @include flexCenter;
-        flex-direction: column;
-        margin: 0.45rem;
-        cursor: pointer;
-        color: $mid-gray;
-        &:hover {
-          color: $main-blue;
-        }
-        .icon {
-          width: 20px;
-          height: 20px;
-          margin: 2px 0;
-        }
-        span {
-          font-size: 10px;
-        }
-      }
-      .active {
-        color: $main-blue;
-      }
-    }
-  }
-} */
 </style>
