@@ -5,7 +5,7 @@ module.exports = {
     },
     "extends": [
         "plugin:vue/essential",
-        "airbnb-base"
+        "standard"
     ],
     "parserOptions": {
         "ecmaVersion": "latest"
@@ -14,10 +14,9 @@ module.exports = {
         "vue"
     ],
     "rules": {
-        'vue/no-multiple-template-root': 0,
-        'no-unused-vars': 0,
-        'vue/multi-word-component-names': 0,
-        'vue/no-v-for-template-key': 0,
-        'max-len':0,
-    },
+      'vue/no-multiple-template-root': 0,
+      'no-unused-vars': 0,
+      'vue/multi-word-component-names': 0,
+      'vue/no-v-for-template-key': 0
+    }
 }
