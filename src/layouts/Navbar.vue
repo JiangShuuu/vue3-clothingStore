@@ -39,8 +39,12 @@
           <li class="hidden mx-2 md:block">
             <i class="text-gray-400 w-7 h-7 active:text-primary fas fa-shopping-bag"></i>
           </li>
-          <li class="hidden mr-2 md:block"><i class="text-gray-400 w-7 h-7 active:text-primary far fa-heart"></i></li>
-          <li class="hidden md:block"><i class="text-gray-400 w-7 h-7 active:text-primary fas fa-search"></i></li>
+          <li class="hidden mr-2 md:block">
+            <i class="text-gray-400 w-7 h-7 active:text-primary far fa-heart"></i>
+          </li>
+          <li class="hidden md:block">
+            <i class="text-gray-400 w-7 h-7 active:text-primary fas fa-search"></i>
+          </li>
         </ul>
       </div>
     </div>
@@ -48,18 +52,17 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-const isOpen = ref(false)
+const isOpen = ref(false);
 
 function checkClose() {
-  isOpen.value = !isOpen.value
+  isOpen.value = !isOpen.value;
 }
+
 </script>
 
 <style lang="postcss" scoped>
-
-
 .item:hover {
   @apply underline underline-offset-8 decoration-2 decoration-primary cursor-pointer
 }
@@ -108,7 +111,7 @@ function checkClose() {
   display: flex;
   align-items: center;
 }
-          
+
 .hamburger {
   position: relative;
 }
