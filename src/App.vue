@@ -7,10 +7,12 @@
       <router-view></router-view>
     </div>
   </main>
+  <Footer />
 </template>
 
 <script setup>
 import Navbar from './layouts/Navbar.vue'
 import GoTop from './layouts/GoTop.vue'
+import Footer from './layouts/Footer.vue'
 
 </script>

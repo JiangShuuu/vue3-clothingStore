@@ -13,11 +13,11 @@
           <div class="content_list">
             <div class="content_list_background" @click="checkClose()"></div>
             <ul class="content_list_items">
-              <li class="content_list_item">首頁</li>
-              <li class="content_list_item">所有商品</li>
-              <li class="content_list_item">關於我們</li>
-              <li class="content_list_item">聯絡我們</li>
-              <li class="content_list_item">Facebook專頁</li>
+              <li class="content_list_item font-extralight">首頁</li>
+              <li class="content_list_item font-extralight">所有商品</li>
+              <li class="content_list_item font-extralight">關於我們</li>
+              <li class="content_list_item font-extralight">聯絡我們</li>
+              <li class="content_list_item font-extralight">Facebook專頁</li>
             </ul>
           </div>
         </div>
@@ -63,6 +63,9 @@ function checkClose () {
 </script>
 
 <style lang="postcss" scoped>
+.item {
+  @apply font-extralight
+}
 .item:hover {
   @apply underline underline-offset-8 decoration-2 decoration-primary cursor-pointer
 }
