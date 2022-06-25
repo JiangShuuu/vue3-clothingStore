@@ -1,5 +1,6 @@
 <template>
-  <div class="flex items-center justify-center w-full pt-6">
+  <div class="w-full pt-12 md:pt-20">
+    <Banner />
     <!-- Banner -->
     <div class="flex flex-col items-center justify-center w-full p-2 bg-gray-200 border">
       <span class="text-xl font-light">HIGH QUALITY ASSURANCE</span>
@@ -9,6 +10,11 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import Banner from '../components/indexPage/Banner.vue'
+
+</script>
 
 <style lang="postcss" scoped>
 </style>

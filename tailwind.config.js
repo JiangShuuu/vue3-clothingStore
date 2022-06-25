@@ -5,18 +5,17 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['Microsoft JhengHei', 'sans-serif'],
+      sans: ['Microsoft JhengHei', 'sans-serif']
     },
     screens: {
-      sm: '640px',
+      sm: '375px',
       md: '768px',
-      lg: '1024px',
-      xl: '1280px',
+      lg: '1024px'
     },
     extend: {
       colors: {
-        primary: '#004ea6',
-      },
+        primary: '#004ea6'
+      }
     }
   },
   plugins: []
