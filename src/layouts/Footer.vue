@@ -1,20 +1,20 @@
 <template>
   <div class="fixed bottom-0 w-full h-16 bg-white md:hidden">
     <ul class="justify-around h-full flex-center">
-      <router-link to="/" :class="['icon', { active: $route.path === '/' }]">
-        <i class="my-1 fas fa-home i"></i>
+      <router-link to="/" class="flex-center" :class="['icon', { active: $route.path === '/' }]">
+        <i class="w-5 h-5 my-1 fas fa-home i"></i>
         <span>首頁</span>
       </router-link>
-      <router-link to="/search" :class="['icon', { active: $route.path === '/search' }]">
-        <i class="my-1 fas fa-search "></i>
+      <router-link to="/search" class="flex-center" :class="['icon', { active: $route.path === '/search' }]">
+        <i class="w-5 h-5 my-1 fas fa-search "></i>
         <span>搜尋商品</span>
       </router-link>
-      <router-link to="/favorite" :class="['icon', { active: $route.path === '/favorite' }]">
-        <i class="my-1 far fa-heart "></i>
+      <router-link to="/favorite" class="flex-center" :class="['icon', { active: $route.path === '/favorite' }]">
+        <i class="w-5 h-5 my-1 far fa-heart "></i>
         <span>我的收藏</span>
       </router-link>
-      <router-link to="/shoppingCar" :class="['icon', { active: $route.path === '/shoppingCar' }]">
-        <i class="my-1 fas fa-shopping-bag "></i>
+      <router-link to="/shoppingCar" class="flex-center" :class="['icon', { active: $route.path === '/shoppingCar' }]">
+        <i class="w-5 h-5 my-1 fas fa-shopping-bag "></i>
         <span>購物車</span>
       </router-link>
     </ul>
