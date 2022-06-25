@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed bottom-0 w-full h-16 border md:hidden">
+  <div class="fixed bottom-0 w-full h-16 bg-white md:hidden">
     <ul class="justify-around h-full flex-center">
       <router-link to="/" :class="['icon', { active: $route.path === '/' }]">
         <i class="my-1 fas fa-home i"></i>

@@ -2,7 +2,7 @@
   <div class="w-full pt-12 md:pt-20">
     <Banner />
     <!-- Banner -->
-    <div class="flex-col w-full p-2 my-2 bg-gray-100 flex-center">
+    <div class="flex-col w-full p-2 my-2 bg-gray-200 flex-center">
       <span class="text-xl font-light">HIGH QUALITY ASSURANCE</span>
       <span class="w-8 h-px my-2 bg-black"></span>
       <span class="text-sm font-extralight">每一件商品都經過嚴格篩選</span>
