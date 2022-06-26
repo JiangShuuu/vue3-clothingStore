@@ -23,8 +23,8 @@
         </div>
         <div class="hidden w-full md:block">
           <ul class="mb-2 flex-center">
-            <li class="item">首頁</li>
-            <li class="mx-2 item">所有商品</li>
+            <router-link to="/" class="item">首頁</router-link>
+            <router-link to="/Products" class="mx-2 item">所有商品</router-link>
             <li class="item">關於我們</li>
             <li class="mx-2 item">聯絡我們</li>
             <li class="item">Facebook專頁</li>

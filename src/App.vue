@@ -7,7 +7,9 @@
       <router-view></router-view>
     </div>
   </main>
-  <Footer />
+  <section class="mt-8">
+    <Footer />
+  </section>
 </template>
 
 <script setup>

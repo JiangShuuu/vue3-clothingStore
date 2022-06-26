@@ -54,7 +54,7 @@
           </div>
         </ul>
       </div>
-      <div class="flex-col mb-4 flex-center">
+      <div class="flex-col mt-1 mb-4 flex-center">
         <span class="font-thin">@2022 CopyRight</span>
         <span class="font-thin">本站僅作品練習，圖資來源為網路資源，無任何商業營利用途</span>
       </div>
