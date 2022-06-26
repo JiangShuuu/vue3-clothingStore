@@ -2,8 +2,8 @@
   <Navbar />
 
   <GoTop />
-  <main class="h-full">
-    <div class="max-w-[1280px] mx-auto mt-1 flex flex-col justify-center">
+  <main class="h-full pt-12 md:pt-20">
+    <div class="flex flex-col justify-center mt-1">
       <router-view></router-view>
     </div>
   </main>
