@@ -22,11 +22,11 @@
           </div>
         </div>
         <div class="hidden w-full md:block">
-          <ul class="mb-2 flex-center">
+          <ul class="mb-2 space-x-8 flex-center">
             <router-link to="/" class="item">首頁</router-link>
-            <router-link to="/Products" class="mx-2 item">所有商品</router-link>
+            <router-link to="/Products" class="item">所有商品</router-link>
             <li class="item">關於我們</li>
-            <li class="mx-2 item">聯絡我們</li>
+            <li class="item">聯絡我們</li>
             <li class="item">Facebook專頁</li>
           </ul>
         </div>

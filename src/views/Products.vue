@@ -1,6 +1,7 @@
 <template>
   <NavTab />
-  <main>
+  <main class="bg-white">
+    123
   </main>
 </template>
 

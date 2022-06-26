@@ -1,5 +1,5 @@
 <template>
-  <main class="w-full max-w-[1280px] mx-auto">
+  <main class="w-full max-w-[1280px] mx-auto mb-8">
     <Banner />
     <div class="flex-col w-full p-2 my-2 bg-gray-200 flex-center">
       <span class="text-xl font-light">HIGH QUALITY ASSURANCE</span>

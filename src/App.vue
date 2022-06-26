@@ -2,14 +2,12 @@
   <Navbar />
 
   <GoTop />
-  <main class="h-full pt-12 md:pt-20">
+  <main class="w-full h-full pt-12 md:pt-20">
     <div class="flex flex-col justify-center mt-1">
       <router-view></router-view>
     </div>
   </main>
-  <section class="mt-8">
-    <Footer />
-  </section>
+  <Footer />
 </template>
 
 <script setup>

@@ -20,7 +20,7 @@
     </ul>
   </div>
   <div class="hidden contain md:block">
-    <div class="flex-col w-full bg-white border flex-center">
+    <div class="flex-col w-full bg-white flex-center">
       <div class="items-start justify-around w-[90%] flex-center">
         <div class="flex-center">
           <img class="w-40 h-40" src="../assets/Icon/logo.png" alt="" />
